@@ -2,7 +2,5 @@
     <div class="card-header">
         {{Server?.serverName}}
     </div>
-    <div class="card-body" ngClass="{{Server?.serverType}}">
-        {{Server?.serverContent}}
-    </div>
+    <ng-content></ng-content>
 </div>
