@@ -1,0 +1,20 @@
+<strong class="col-lg-3 offset-2">Add new Servers or blueprints!</strong>
+<div class="col-lg-2 offset-2">
+    <div>
+        <div>
+            <label for="serverName">Server Name</label>
+            <input class="form-control col-lg-2" id="serverName" name="serveName" [(ngModel)]="serverName" />
+        </div>
+        <div>
+            <label for="serverContent">Server Content</label>
+            <input class="form-control" id="serverContent" name="serverContent" [(ngModel)]="serverContent" />
+        </div>
+        <div class="p-2">
+            <button class="btn btn-primary p-2" (click)="addServer()">Add Server</button>
+            <button class="btn btn-primary p-2" (click)="addBluePrint()">Add Server BluePrint</button>
+        </div>
+    </div>
+    <div class="p-2" *ngFor="let server of Servers">
+        <app-servercomponent [Server]="server"></app-servercomponent>
+    </div>
+</div>
