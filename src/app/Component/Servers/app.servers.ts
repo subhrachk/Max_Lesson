@@ -9,7 +9,7 @@ import { Component } from "@angular/core";
 export class Servers {
     serverName : string = '';
     serverContent : string = '';
-    serverType : 'server' | 'blueprint';
+    serverType : 'server' | 'blueprint' | null = null;
     Servers :{serverName : string, serverContent : string , serverType : 'server' | 'blueprint'}[] = [
         {serverName : 'Test Server' , serverContent : 'Test Content' , serverType : 'server' },
         {serverName : 'Test blueprintServer' , serverContent : 'Test blueprintServer' , serverType : 'blueprint' },

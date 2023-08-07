@@ -10,7 +10,7 @@ export class ServerComponent {
     //serverName : string = '';
     //serverContent : string = '';
     //serverType : 'server' | 'blueprint';
-    @Input() Server :{serverName : string, serverContent : string , serverType : string} ;
+    @Input() Server :{serverName : string, serverContent : string , serverType : string}  | null = null;
 
 
 
