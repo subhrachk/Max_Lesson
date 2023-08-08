@@ -6,13 +6,17 @@ import { FormsModule } from '@angular/forms';
 import { Servers } from './Component/Servers/app.servers';
 import { ServerComponent } from './Component/Servers/ServerComponent/app.servercomponent';
 import { NewServer } from './Component/Servers/NewServer/app.newserver';
+import { AccountComponent } from './Component/Account/account.component';
+import { NewAccountComponent } from './Component/Account/NewAccount/new-account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Servers,
     ServerComponent,
-    NewServer
+    NewServer,
+    AccountComponent,
+    NewAccountComponent
   ],
   imports: [
     BrowserModule,
