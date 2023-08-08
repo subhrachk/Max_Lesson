@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { Servers } from './Component/Servers/app.servers';
-import { ServerComponent } from './Component/ServerComponent/app.servercomponent';
-import { NewServer } from './Component/NewServer/app.newserver';
+import { ServerComponent } from './Component/Servers/ServerComponent/app.servercomponent';
+import { NewServer } from './Component/Servers/NewServer/app.newserver';
 
 @NgModule({
   declarations: [
