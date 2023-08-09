@@ -22,13 +22,11 @@ export class AccountService {
 
     constructor(private loggingService: LoggingService) { }
     onAccountAdded(newAccount: { name: string, status: string }) {
-        //console.log(newAccount); 
         this.accounts.push(newAccount);
         this.loggingService.logStatusChange(newAccount.status);
     }
 
     onStatusChanged(updateInfo: { id: number, newStatus: string }) {
-        //console.log(updateInfo); 
         this.accounts[updateInfo.id].status = updateInfo.newStatus;
         this.loggingService.logStatusChange(updateInfo.newStatus);
     }
